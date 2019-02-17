@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Representative ADMIN</string>
+    <string name="speciality">select Speciality</string>
+
+    <string-array name="array_speciality">
+        <item>Addiction medicine</item>
+        <item>Anaesthesia</item>
+        <item>Dermatology</item>
+        <item>Emergency medicine</item>
+        <item>General practice</item>
+        <item>Intensive care medicine</item>
+        <item>Medical administration</item>
+        <item>Obstetrics and gynaecology</item>
+        <item>Ophthalmology</item>
+        <item>Paediatrics and child health</item>
+        <item>Physician</item>
+        <item>Public health medicine</item>
+        <item>Radiation oncology</item>
+        <item>Radiology</item>
+        <item>Rehabilitation medicine</item>
+        <item>Sexual health medicine</item>
+        <item>Sport and exercise medicine</item>
+        <item>Surgery</item>
+    </string-array>
+
+
+</resources>
