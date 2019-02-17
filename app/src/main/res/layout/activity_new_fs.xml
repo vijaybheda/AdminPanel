@@ -8,83 +8,128 @@
     android:orientation="vertical"
     tools:context=".NewFS">
 
-    <EditText
-        android:id="@+id/edit_text_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="8dp"
-        android:layout_marginHorizontal="20dp"
-        android:hint="First Name" />
-
-    <EditText
-        android:id="@+id/edit_text_lname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_text_name"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="8dp"
-        android:hint="Last Name"
-        android:padding="6dp" />
-
-    <EditText
-        android:id="@+id/edit_text_email"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="8dp"
-        android:hint="email address"
-        android:inputType="textEmailAddress"
-        android:layout_below="@+id/edit_text_lname"
-        android:padding="6dp"/>
+        android:hint="First Name">
 
-    <EditText
-        android:id="@+id/edit_text_phoneNumber"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="8dp"
-        android:hint="Phone Number"
-        android:inputType="number"
-        android:padding="6dp" android:maxLength="10"/>
+        android:hint="Last Name">
 
-    <EditText
-        android:id="@+id/edit_text_dob"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="8dp"
-        android:hint="Birth date"
-        android:padding="6dp"
-        android:editable="false"/>
+        android:hint="email address">
 
-    <Spinner
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Phone Number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Birth date">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:inputType="date" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
         android:id="@+id/spinnerspeciality"
-        android:prompt="@string/speciality"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="8dp"
-        android:spinnerMode="dialog"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="8dp"
         android:padding="6dp"
-        android:scrollIndicators="right"/>
+        android:prompt="@string/speciality"
+        android:scrollIndicators="right"
+        android:spinnerMode="dialog" />
 
-    <EditText
-        android:id="@+id/edit_text_dept"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="8dp"
-        android:hint="Department"
-        android:padding="6dp"/>
 
-    <EditText
-        android:id="@+id/edit_text_address"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="8dp"
-        android:hint="Address"
-        android:padding="6dp"/>
+        android:hint="Department">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_depta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:hint="A"
+            android:inputType="date" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_deptb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:hint="B"
+            android:inputType="date" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:inputType="date" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatAutoCompleteTextView
         android:id="@+id/edit_text_city"
@@ -93,17 +138,22 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="8dp"
         android:hint="City"
-        android:padding="6dp"/>
+        android:padding="6dp" />
 
-    <EditText
-        android:id="@+id/edit_text_zipcode"
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="8dp"
-        android:hint="Zip Code"
-        android:padding="6dp"/>
+        android:hint="Zip Code">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_zipcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:inputType="date" />
 
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
