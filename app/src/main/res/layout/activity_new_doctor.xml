@@ -12,12 +12,10 @@
         android:layout_height="wrap_content"
         android:hint="First Name"
         android:layout_marginHorizontal="20dp">
-
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_text_doctorname"
+            android:id="@+id/edit_text_doctorfname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -25,12 +23,10 @@
         android:layout_height="wrap_content"
         android:hint="Last Name"
         android:layout_marginHorizontal="20dp">
-
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_text_lname"
+            android:id="@+id/edit_text_doctorlname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -38,13 +34,11 @@
         android:layout_height="wrap_content"
         android:hint="email address"
         android:layout_marginHorizontal="20dp">
-
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_email"
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -52,31 +46,27 @@
         android:layout_height="wrap_content"
         android:hint="Phone Number"
         android:layout_marginHorizontal="20dp">
-
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_phoneNumber"
             android:inputType="number"
             android:maxLength="10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
     </com.google.android.material.textfield.TextInputLayout>
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Birth date"
         android:layout_marginHorizontal="20dp">
-
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_text_dob"
+            android:id="@+id/edit_text_drdob"
             android:inputType="number"
             android:maxLength="10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:editable="false"/>
-
+            android:editable="false"
+            android:onClick="datePick" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <android.widget.Spinner
@@ -90,20 +80,15 @@
         android:padding="6dp"
         android:scrollIndicators="right"/>
 
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Department"
         android:layout_marginHorizontal="20dp">
-
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_dept"
-            android:inputType="number"
-            android:maxLength="10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -111,14 +96,10 @@
         android:layout_height="wrap_content"
         android:hint="Address"
         android:layout_marginHorizontal="20dp">
-
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_address"
-            android:inputType="number"
-            android:maxLength="10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -131,21 +112,17 @@
         android:hint="City"
         android:padding="6dp"/>
 
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Zip Code"
         android:layout_marginHorizontal="20dp">
-
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_zipcode"
             android:inputType="number"
-            android:maxLength="10"
+            android:maxLength="6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
     </com.google.android.material.textfield.TextInputLayout>
-
 
 </androidx.appcompat.widget.LinearLayoutCompat>
